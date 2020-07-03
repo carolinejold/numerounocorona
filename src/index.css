@@ -52,9 +52,10 @@ body::before {
 .form {
 width: 100%;
 max-width: 700px;
-margin: 10px auto 0px;
+padding-bottom: 10px;
+margin: 0px auto 0px;
 background-color: white;
-
+border-color: aquamarine;
 }
 
 .form__textfield {
@@ -78,11 +79,12 @@ background-color: white;
 
 header {
   padding: 1px 1px 10px;
-  margin: 20px auto 0px;
+  margin: 40px auto 0px;
   /* margin: 40px auto 10px; */
   width: 100%;
   max-width: 700px;
   background-color: white;
+  border-radius;
 }
 
 h1 {
