@@ -44,14 +44,11 @@ class App extends Component {
   }
   
   findCountry(countryName){
-    const pre = countryName.toLowerCase(); // all letters from input to lowercase
-    const capitalizedCountry = pre.charAt(0).toUpperCase() + pre.slice(1) //capitalize the 
 
-    const country = this.state.all.find(e => capitalizedCountry === e.Country);
+    const country = this.state.all.find(e => countryName.toLowerCase()  === e.Country.toLowerCase());
     
-    if(capitalizedCountry==='Scotland'){
+    if(countryName.toLowerCase()==='scotland'){
       this.setState({errorMessage: 'Unfortunately, Scotland could not be found as the WHO does not count it as a country. Try United Kingdom!'})
-
       return;
     }
 
@@ -71,8 +68,8 @@ class App extends Component {
     
     }
     
-    if(!this.state.selected.find(el=>el.Country===selectedCountry.Country)){
-      this.setState({selected: [...this.state.selected, selectedCountry]});
+    if(!this.state.selected.find(el=>el.Country  === selectedCountry.Country)){
+      this.setState({selected: [...this.state.selected, selectedCountry ]});
     }
   }
 

@@ -7,12 +7,12 @@
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+
 }
 
 html {
   font-family: 'Roboto', sans-serif;
   text-align: center;
-  background: url('https://thumbs.dreamstime.com/b/coronavirus-bacteria-seamless-vector-background-linear-green-monochrome-design-coronavirus-bacteria-seamless-vector-176100189.jpg');
 }
 
 body::before {
@@ -28,24 +28,24 @@ body::before {
 
 .card-container {
   width: 100%;
-  max-width: 800px;
+  max-width: 700px;
   max-height: 400px;
-  margin: 0px auto 10px;
-  padding-top: 1px;
+  margin: 0px auto 5px;
+  padding-top: 0px;
   padding-bottom: 1px;
   overflow: scroll;
 }
 
 .card {
-  /* background-color: hotpink; */
+  background-color: white;
   border: 1px solid gray;
   border-radius: 5px;
   margin: 0px auto 10px;
-  padding: 5px 10px;
+  padding: 5px 0px;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  max-width: 700px;
+  width: 695px;
+  max-width: 690px;
   text-align: center;
 }
 
@@ -53,9 +53,14 @@ body::before {
 width: 100%;
 max-width: 700px;
 padding-bottom: 10px;
-margin: 0px auto 0px;
+margin: 0px auto 5px;
 background-color: white;
-border-color: aquamarine;
+border-bottom: 1px solid gray;
+border-left: 1px solid gray;
+border-right: 1px solid gray;
+border-bottom-left-radius: 5px;
+border-bottom-right-radius: 5px;
+
 }
 
 .form__textfield {
@@ -75,16 +80,30 @@ border-color: aquamarine;
 .error {
   font-size: medium;
   margin: 1.5em 1em;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin: 0px auto 10px;
+  padding: 5px 0px;
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  max-width: 700px;
+  text-align: center;
 }
 
 header {
-  padding: 1px 1px 10px;
+  padding: 5px 0px 10px;
   margin: 40px auto 0px;
   /* margin: 40px auto 10px; */
   width: 100%;
   max-width: 700px;
   background-color: white;
-  border-radius;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-top: 1px solid gray;
+border-left: 1px solid gray;
+border-right: 1px solid gray;
 }
 
 h1 {
@@ -100,14 +119,6 @@ a {
 p {
   grid-area: 3 / 2 / 4 / 3;
 }
-
-/* .top {
-  margin-top: 10px;
-}
-
-.bottom {
-  margin-top: 15px;
-} */
 
 .card h1 {
   font-size: 20px;
