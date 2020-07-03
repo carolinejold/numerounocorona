@@ -44,8 +44,8 @@ class App extends Component {
   }
   
   findCountry(countryName){
-    const pre = countryName.toLowerCase();
-    const capitalizedCountry = pre.charAt(0).toUpperCase() + pre.slice(1)
+    const pre = countryName.toLowerCase(); // all letters from input to lowercase
+    const capitalizedCountry = pre.charAt(0).toUpperCase() + pre.slice(1) //capitalize the 
 
     const country = this.state.all.find(e => capitalizedCountry === e.Country);
     

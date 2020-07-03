@@ -77,8 +77,9 @@ background-color: white;
 }
 
 header {
-  padding: 40px 
-  margin: 40px auto 10px;
+  padding: 1px 1px 10px;
+  margin: 10px auto 0px;
+  /* margin: 40px auto 10px; */
   width: 100%;
   max-width: 700px;
   background-color: white;
